@@ -86,7 +86,6 @@ gem_install_or_update() {
     gem update "$@"
   else
     gem install "$@"
-    rbenv rehash
   fi
 }
 
@@ -142,8 +141,7 @@ brew "qt@5.5"
 # Programming languages and package managers
 brew "libyaml" # should come after openssl
 brew "node"
-brew "rbenv"
-brew "ruby-build"
+brew "asdf"
 brew "yarn"
 
 # Databases
@@ -156,21 +154,15 @@ brew unlink qt@5.5
 brew link --force qt@5.5
 
 fancy_echo "Configuring Ruby ..."
-find_latest_ruby() {
-  rbenv install -l | grep -v - | tail -1 | sed -e 's/^ *//'
-}
+asdf plugin-add ruby
+ruby_version="$(asdf list-all ruby | tail -1)"
+append_to_zshrc 'source /usr/local/Cellar/asdf/0.3.0/asdf.sh' 1
 
-ruby_version="$(find_latest_ruby)"
-# shellcheck disable=SC2016
-append_to_zshrc 'eval "$(rbenv init - --no-rehash)"' 1
-eval "$(rbenv init -)"
-
-if ! rbenv versions | grep -Fq "$ruby_version"; then
-  RUBY_CONFIGURE_OPTS=--with-openssl-dir=/usr/local/opt/openssl rbenv install -s "$ruby_version"
+if ! asdf list ruby | grep -Fq "$ruby_version"; then
+  asdf install ruby "$ruby_version"
 fi
 
-rbenv global "$ruby_version"
-rbenv shell "$ruby_version"
+asdf global ruby "$ruby_version"
 gem update --system
 gem_install_or_update 'bundler'
 number_of_cores=$(sysctl -n hw.ncpu)
