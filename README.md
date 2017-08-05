@@ -212,20 +212,20 @@ brew install shellcheck
 [ShellCheck]: http://www.shellcheck.net/about.html
 [Syntastic]: https://github.com/scrooloose/syntastic
 
-Thank you, [contributors]!
 
-[contributors]: https://github.com/thoughtbot/laptop/graphs/contributors
 
-By participating in this project,
-you agree to abide by the thoughtbot [code of conduct].
-
-[code of conduct]: https://thoughtbot.com/open-source-code-of-conduct
-
-License
+Credits
 -------
 
-Laptop is © 2017 Bruno Gama.
-It is free software,
-and may be redistributed under the terms specified in the [LICENSE] file.
+The Bruno Gama laptop script is based on and inspired by
+[thoughtbot's laptop](https://github.com/thoughtbot/laptop) script.
 
-[LICENSE]: LICENSE
+### Public domain
+
+thoughtbot's original work remains covered under an [MIT License](https://github.com/thoughtbot/laptop/blob/c997c4fb5a986b22d6c53214d8f219600a4561ee/LICENSE).
+
+Bruno Gama work on this project is in the worldwide [public domain](LICENSE.md), as are contributions to our project. As stated in [CONTRIBUTING](CONTRIBUTING.md):
+
+> This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+>
+> All contributions to this project will be released under the CC0 dedication. By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.
