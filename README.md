@@ -68,7 +68,6 @@ Unix tools:
 
 * [Git] for version control
 * [OpenSSL] for Transport Layer Security (TLS)
-* [RCM] for managing company and personal dotfiles
 * [The Silver Searcher] for finding things in files
 * [Tmux] for saving project state and switching between projects
 * [Zsh] as your shell
