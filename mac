@@ -203,7 +203,7 @@ bundle config --global jobs $((number_of_cores - 1))
 
 # Setting up latest Python
 find_latest_python() {
-    grep -oE '^(\d+\.)+\d+$' <<< $(pyenv install -l | awk '{$1=$1;print}' | tail -n +2) | tail -1
+    printf '%s' "$(pyenv install -l | awk '{$1=$1;print}' | tail -n +2)" | grep -oE '^(\d+\.)+\d+$' | tail -1
 }
 python_version="$(find_latest_python)"
 pyenv install "$python_version"
