@@ -220,12 +220,9 @@ Credits
 The Bruno Gama laptop script is based on and inspired by
 [thoughtbot's laptop](https://github.com/thoughtbot/laptop) script.
 
-### Public domain
+LICENSE
+-------------
 
 thoughtbot's original work remains covered under an [MIT License](https://github.com/thoughtbot/laptop/blob/c997c4fb5a986b22d6c53214d8f219600a4561ee/LICENSE).
 
-Bruno Gama work on this project is in the worldwide [public domain](LICENSE.md), as are contributions to our project. As stated in [CONTRIBUTING](CONTRIBUTING.md):
-
-> This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
->
-> All contributions to this project will be released under the CC0 dedication. By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.
+Bruno Gama work on this is licensed under MIT License (LICENSE.md).
