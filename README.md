@@ -225,4 +225,4 @@ LICENSE
 
 thoughtbot's original work remains covered under an [MIT License](https://github.com/thoughtbot/laptop/blob/c997c4fb5a986b22d6c53214d8f219600a4561ee/LICENSE).
 
-Bruno Gama work on this is licensed under MIT License (LICENSE.md).
+Bruno Gama work on this project is licensed under MIT License (LICENSE.md).
