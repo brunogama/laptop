@@ -138,9 +138,6 @@ brew "autojump"
 brew "git-extras"
 brew "git-flow"
 
-# Mac utilities
-brew "mackup"
-
 # GitHub
 brew "hub"
 
@@ -148,10 +145,9 @@ brew "hub"
 brew "imagemagick"
 
 # Programming languages and package managers
-brew "node"
-brew "go"
 cask "java"
 brew "libyaml" # should come after openssl
+brew "node"
 brew "rbenv"
 brew "ruby-build"
 brew "pyenv"
@@ -171,8 +167,6 @@ cask "virtualbox"
 cask "virtualbox-extension-pack"
 cask "genymotion"
 cask "realm-browser"
-cask "the-unarchiver"
-cask "appcleaner"
 EOF
 
 fancy_echo "Configuring Ruby ..."
