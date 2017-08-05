@@ -1,7 +1,7 @@
 Laptop
 ======
 
-Laptop is a fork from the awesome script made by the good people of thoughtbot. It's purpose is to set up an Mac OS laptop for Mobile Development.
+Laptop is a fork from the awesome script made by the good people of thoughtbot. It's purpose is to set up an macOS laptop for Mobile Development.
 
 It can be run multiple times on the same machine safely.
 It installs, upgrades, or skips packages
@@ -15,12 +15,9 @@ Most of the things installed by the original Laptop script are to prepare the ma
 Requirements
 ------------
 
-We support:
-
 * macOS Sierra (10.12)
 
-Older versions may work but aren't regularly tested.
-Bug reports for older versions are welcome.
+Older versions may work. But if they don't, feel free to write a PR.
 
 Install
 -------
@@ -78,7 +75,6 @@ Unix tools:
 
 [Git]: https://git-scm.com/
 [OpenSSL]: https://www.openssl.org/
-[RCM]: https://github.com/thoughtbot/rcm
 [The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
 [Tmux]: http://tmux.github.io/
 [Zsh]: http://www.zsh.org/
@@ -92,20 +88,57 @@ GitHub tools:
 
 Programming languages, package managers, and configuration:
 
+* [Java] for writing Android code
 * [Bundler] for managing Ruby libraries
 * [Rbenv] for managing versions of Ruby
 * [Ruby Build] for installing Rubies
 * [Ruby] stable for writing general-purpose code
+* [Pyenv] For managing versions of Python
+* [Pyenv-virtualbox] virtualenvs and conda environments for Python on UNIX-like systems
+* [Python] install the latest stable Python 3
 
+[Java]: https://java.com/
 [Bundler]: http://bundler.io/
 [Node.js]: http://nodejs.org/
 [NPM]: https://www.npmjs.org/
 [Rbenv]: https://github.com/sstephenson/rbenv
 [Ruby Build]: https://github.com/sstephenson/ruby-build
 [Ruby]: https://www.ruby-lang.org/en/
+[Pyenv]: https://github.com/pyenv/pyenv
+[Pyenv-virtualbox]: https://github.com/pyenv/pyenv-virtualenv
+[Python]: https://www.python.org/
+
+Mobile development utilities
+
+* [Liftoff] CLI for creating and configuring new Xcode projects
+* [mogenerator] Core Data code generation
+
+[Liftoff]: https://github.com/liftoffcli/liftoff
+[mogenerator]: https://github.com/rentzsch/mogenerator
+
+Aplications
+
+* [Google Chrome] because it is like Java, because everything uses Google Chrome
+* [Android Studio] "Android Studio provides the fastest tools for building apps on every type of Android device" (sic)
+* [Sip] simply the color picker created
+* [Developer Colorpicker] another useful color picker
+* [Github Desktop] a Github client
+* [VirtualBox] is a general-purpose full virtualizer for x86 hardware
+* [Genymotion] a much better Android simulator which runs on virtualbox environment
+* [Realm Browser] utility to open and modify realm database files
+
+[Google Chrome]: https://www.google.com.br/chrome/browser/desktop/index.html
+[Android Studio]: https://developer.android.com/studio/
+[Sip]: http://sipapp.io/
+[Developer Colorpicker]: https://download.panic.com/picker/
+[Github Desktop]: https://desktop.github.com/
+[VirtualBox]: https://www.virtualbox.org/
+[Genymotion]: https://www.genymotion.com
+[Realm Browser]: https://github.com/realm/realm-browser-osx
 
 
-It should take less than 15 minutes to install (depends on your machine).
+
+It should take ~15 minutes to install (depends on your machine).
 
 Customize in `~/.laptop.local`
 ------------------------------
