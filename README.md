@@ -135,7 +135,13 @@ Aplications
 [Genymotion]: https://www.genymotion.com
 [Realm Browser]: https://github.com/realm/realm-browser-osx
 
+iOS Development Utilities
 
+* [Cocoapods] a dependency manager for Swift and Objective-C Cocoa projects
+* [Fastlane] the easiest way to automate building and releasing your iOS and Android apps
+
+[Cocoapods]: https://cocoapods.org/
+[Fastlane]: https://fastlane.tools/
 
 It should take ~15 minutes to install (depends on your machine).
 
