@@ -121,22 +121,27 @@ fancy_echo "Updating Homebrew formulae ..."
 brew update
 brew bundle --file=- <<EOF
 tap "homebrew/services"
-tap liftoffcli/formulae
+tap "universal-ctags/universal-ctags"
+tap "caskroom/cask"
+tap "heroku/brew"
 
 # Unix
+brew "universal-ctags", args: ["HEAD"]
 brew "git"
 brew "openssl"
+brew "reattach-to-user-namespace"
+brew "the_silver_searcher"
+brew "tmux"
+brew "vim"
+brew "watchman"
+brew "zsh"
 brew "readline"
 brew "xz"
-brew "tmux"
-brew "reattach-to-user-namespace"
-brew "zsh"
+
 
 # Utilities
 brew "htop"
 brew "autojump"
-brew "git-extras"
-brew "git-flow"
 
 # GitHub
 brew "hub"
@@ -147,26 +152,14 @@ brew "imagemagick"
 # Programming languages and package managers
 cask "java"
 brew "libyaml" # should come after openssl
-brew "node"
+brew "coreutils"
 brew "rbenv"
 brew "ruby-build"
 brew "pyenv"
 brew "pyenv-virtualenv"
 
-# Mobile development tools
-brew "liftoff"
-brew "mogenerator"
-
 # Applications
 cask "google-chrome"
-cask "android-studio"
-cask "sip"
-cask "colorpicker-developer"
-cask "github-desktop"
-cask "virtualbox"
-cask "virtualbox-extension-pack"
-cask "genymotion"
-cask "realm-browser"
 EOF
 
 fancy_echo "Configuring Ruby ..."
